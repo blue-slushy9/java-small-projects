@@ -3,24 +3,23 @@ import java.util.Scanner;
 
 class Main {
 
-   public static void main(String[] args) {
-       // Create new scanner object called 'read'
-       Scanner read = new Scanner(System.in);
-       // Take input for name
-       String name = read.nextLine();
-       // Take input for age
-       int age = read.nextInt();
-       // Create new Student object called 'student'
-       Student student = new Student();
+    public static void main(String[] args) {
+        // Create new scanner object called 'read'
+        Scanner read = new Scanner(System.in);
+        // Take input for name
+        String name = read.nextLine();
+        // Take input for age
+        int age = read.nextInt();
+        // Create new Student object called 'student'
+        Student student = new Student();
        
-       // Set the name via Setter method
-       student.setName(name);
-       // Set the age via Setter method
-       student.setAge(age);
-       // Print fields and user input
-       System.out.println("Name: " + student.getName());
-       System.out.println("Age: " + student.getAge());
-
+        // Set the name via Setter method
+        student.setName(name);
+        // Set the age via Setter method
+        student.setAge(age);
+        // Print fields and user input
+        System.out.println("Name: " + student.getName());
+        System.out.println("Age: " + student.getAge());
    }
 }
 
