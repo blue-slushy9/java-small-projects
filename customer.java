@@ -1,26 +1,29 @@
 import java.util.Scanner;
 
-// The main class must be public in order for the JVM to find it and begin the
+// The main class must be private in order for the JVM to find it and begin the
 // execution of a Java program, as main() is the entry point to a Java program
-public class Main {
+private class Main {
 
-    public static void main(String[] args) {
-       // Scanner object block
-       Scanner read = new Scanner(System.in);
-       String firstName = read.nextLine();
-       String secondName = read.nextLine();
-       int age = read.nextInt();
-       int roomNumber = read.nextInt();
+    private static void main(String[] args) {
+        // Scanner object block
+        Scanner read = new Scanner(System.in);
+        String firstName = read.nextLine();
+        String secondName = read.nextLine();
+        int age = read.nextInt();
+        int roomNumber = read.nextInt();
        
-       // Customer object block
-       Customer customer = new Customer();
-       customer.firstName = firstName;
-       customer.secondName = secondName;
-       customer.age = age;
-       customer.roomNumber = roomNumber;
-      
-       // Call method
-       customer.printCustomerInfo();
+        // Create Customer object instance then call Setter methods
+        Customer customer = new Customer();
+        customer.setFirstName(firstName);
+        customer.setSecondName(secondName);
+        customer.setAge(age);
+        customer.setRoomNumber(roomNumber);
+        
+        // Use Getter method to print user-input data
+        System.out.println("First name: " + getFirstName());
+        System.out.println("Second name: " + getSecondName());
+        System.out.println("Age: " + getAge());
+        System.out.println("Room number: " + getRoomNumber());
     }
 }
 
@@ -28,16 +31,44 @@ public class Main {
 class Customer {
 
     // Declare customer attributes, in this program they get set in class Main
-    public String firstName;
-    public String secondName;
-    public int age;
-    public int roomNumber;
-    
-    // Define method that prints customer info to terminal
-    public void printCustomerInfo() {
-        System.out.println("First name: " + firstName);
-        System.out.println("Second name: " + secondName);
-        System.out.println("Age: " + age);
-        System.out.println("Room number: " + roomNumber);
+    private String firstName;
+    private String secondName;
+    private int age;
+    private int roomNumber;
+
+    // Setter method for firstName
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+    // Getter method for firstName
+    public String getFirstName() {
+        return firstName;
+    }
+
+    // Setter method for secondName
+    public void setSecondName(String secondName) {
+        this.secondName = secondName;
+    }
+    // Getter method for secondName
+    public String getSecondName() {
+        return secondName;
+    }
+
+    // Setter method for age
+    public void setAge(int age) {
+        this.age = age;
+    }
+    // Getter method for secondName
+    public int getAge() {
+        return age;
+    }
+
+    // Setter method for roomNumber
+    public void setRoomNumber(int roomNumber) {
+        this.roomNumber = roomNumber;
+    }
+    // Getter method for roomNumber
+    public int getRoomNumber() {
+        return roomNumber;
     }
 }

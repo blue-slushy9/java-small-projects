@@ -10,14 +10,14 @@ class Main {
         String name = read.nextLine();
         // Take input for age
         int age = read.nextInt();
+        
         // Create new Student object called 'student'
         Student student = new Student();
-       
         // Set the name via Setter method
         student.setName(name);
         // Set the age via Setter method
         student.setAge(age);
-        // Print fields and user input
+        // Print fields and user input using Getter method
         System.out.println("Name: " + student.getName());
         System.out.println("Age: " + student.getAge());
     }
