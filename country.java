@@ -11,7 +11,6 @@ class Program {
 	    System.out.println("Country: " + c.name);
 	    System.out.println("Capital: " + c.capital);
     }
-	
 }
 
 // Default access modifier for classes is package-private

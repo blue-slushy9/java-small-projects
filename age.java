@@ -27,7 +27,7 @@ class Main {
 // is available only to other classes within the same package
 class Student {
    
-    // Private scope means variables will only be accessible within this class
+    // Private means variables will only be accessible within this class
     private String name;
     private int age;
 
