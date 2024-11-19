@@ -20,6 +20,7 @@ class Main {
        // Print fields and user input
        System.out.println("Name: " + student.getName());
        System.out.println("Age: " + student.getAge());
+
    }
 }
 
@@ -27,34 +28,32 @@ class Main {
 // is available only to other classes within the same package
 class Student {
    
-    // Public scope means 'name' will be accessible from anywhere in the
-    // program, as long as its class is also accessible
+    // Private scope means variables will only be accessible within this class
     private String name;
-    // Private scope means 'age' will only be accessible within this class
     private int age;
 
-    // Getter method for name
-    public String getName() {
-        return name;
-    } 
     // Setter method for name
     public void setName(String name) {
         this.name = name;
     }
+    // Getter method for name
+    public String getName() {
+        return name;
+    } 
 
+    // Setter method for age
+    public void setAge(int age) {
+        // Verify age entered is valid, i.e. no negative numbers
+        if (age >= 0) {
+            this.age = age;
+        }
+        // Negative numbers just get overwritten to zero
+        else {
+            this.age = 0;
+        }
+    }
     // Getter method for age
-   public int getAge() {
-       return age;
-   }
-   // Setter method for age
-   public void setAge(int age) {
-       // Verify age entered is valid, i.e. no negative numbers
-       if (age >= 0) {
-           this.age = age;
-       }
-       // Negative numbers just get overwritten to zero
-       else {
-           this.age = 0;
-       }
-   }
+    public int getAge() {
+        return age;
+    }   
 }
