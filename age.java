@@ -20,7 +20,7 @@ class Main {
         // Print fields and user input
         System.out.println("Name: " + student.getName());
         System.out.println("Age: " + student.getAge());
-   }
+    }
 }
 
 // Default class is default, i.e. package-private, which means the class
