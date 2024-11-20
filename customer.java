@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
-// The main class must be private in order for the JVM to find it and begin the
+// The Main class must be public in order for the JVM to find it and begin the
 // execution of a Java program, as main() is the entry point to a Java program
-private class Main {
+public class Main {
 
     private static void main(String[] args) {
         // Scanner object block
@@ -27,7 +27,7 @@ private class Main {
     }
 }
 
-// Default class is package-private
+// Default access modifier is package-private
 class Customer {
 
     // Declare customer attributes, in this program they get set in class Main

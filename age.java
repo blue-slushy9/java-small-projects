@@ -1,7 +1,7 @@
 // Allows you to take user input
 import java.util.Scanner;
 
-class Main {
+public class Main {
 
     public static void main(String[] args) {
         // Create new scanner object called 'read'

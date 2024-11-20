@@ -1,7 +1,7 @@
 // Used to take user input via terminal
 import java.util.Scanner;
 
-class Main {
+public class Main {
 
     public static void main(String[] args) {
         // Create instance of a Scanner object called 'read'
@@ -40,9 +40,9 @@ class Ticket {
         return movie;
     }
     public int getRow() {
-       return row;
+        return row;
     }
     public int getSeat() {
-       return seat;
+        return seat;
     }
 }

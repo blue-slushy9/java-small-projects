@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
-// 'class Program' is a common alternative to 'class Main'
-class Program {
+// 'public class Program' is a common alternative to 'public class Main'
+public class Program {
 	
 	public static void main(String[] args) {
 	    // Scanner block
