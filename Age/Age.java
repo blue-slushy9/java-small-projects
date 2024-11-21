@@ -1,15 +1,20 @@
 // Allows you to take user input
 import java.util.Scanner;
 
-public class Main {
+// Main class name should match file name, at least for a small program
+public class Age {
 
     public static void main(String[] args) {
         // Create new scanner object called 'read'
         Scanner read = new Scanner(System.in);
         // Take input for name
+        System.out.print("Please enter the student's name: ");
         String name = read.nextLine();
         // Take input for age
+        System.out.print("Please enter the student's age: ");
         int age = read.nextInt();
+        // Blank line for legibility
+        System.out.println();
         
         // Create new Student object called 'student'
         Student student = new Student();
