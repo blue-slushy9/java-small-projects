@@ -11,14 +11,14 @@ for item in *; do
       # Skip it
       continue
     fi
-  # Set the new directory name equal to the project name, minus the '.java'
-  dir_name="${item:0:-5}"
-  # Create a directory that matches the file name
-  mkdir "$dir_name"
-  echo "Directory $dir_name has been created."
-  # Move the file into the new directory
-  mv "$item" "$dir_name"
-  echo "File $item has been moved into its directory."
+    # Set the new directory name equal to the project name, minus the '.java'
+    dir_name="${item:0:-5}"
+    # Create a directory that matches the file name
+    mkdir "$dir_name"
+    echo "Directory $dir_name has been created."
+    # Move the file into the new directory
+    mv "$item" "$dir_name"
+    echo "File $item has been moved into its directory."
   fi
 done
 
