@@ -24,6 +24,7 @@ class PupilDetails {
     private int age;
     // Default value for strings is null
     private String result;
+    
     // Define conditional setter method
     public void setAge(int a) {
         this.age = a;
@@ -38,23 +39,8 @@ class PupilDetails {
         }
     }
 
+    // Define getter method
     public String getResult() {
         return result;
     }
 }
-
-/*
-    // Define conditional getter method
-    public String getResult() {
-        // If an age was assigned with the setter method
-        if (age > 6) {
-            // Return the corresponding message
-            return success;
-        } else if (age <= 6 && age >= 0) {
-            return failure;
-        } else {
-            return invalid;
-        }
-    }
-}
-*/
