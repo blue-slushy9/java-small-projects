@@ -1,22 +1,22 @@
 import java.util.Scanner;
 
-// 'public class Program' is a common alternative to 'public class Main'
 public class Country {
 	
 	public static void main(String[] args) {
 	    // Scanner block
-        Scanner read = New Scanner();
+        Scanner read = new Scanner(System.in);
 		String name = read.nextLine();
 		String capital = read.nextLine();
+        read.close();
 
 		// Create instance of Country object and call Setter methods
-	    Country c = new Country();
-		c.name = setName(name);
-	    c.capital = setCapital(capital);
+	    CountryDetails cd = new CountryDetails();
+		cd.setName(name);
+		cd.setCapital(capital);
 
 		// Print fields and object attributes using Getter method
-	    System.out.println("Country: " + getName());
-	    System.out.println("Capital: " + getCapital());
+	    System.out.println("Country: " + cd.getName());
+	    System.out.println("Capital: " + cd.getCapital());
     }
 }
 
@@ -26,6 +26,9 @@ class CountryDetails {
     // Private access modifier restricts access to only this class
     private String name;
     private String capital;
+
+	// No-argument constructor (recommended)
+	public CountryDetails() {}
 
 	// Setter method for name
 	public void setName(String name) {
