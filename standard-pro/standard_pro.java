@@ -1,11 +1,14 @@
-//be attentive to access modifiers
+
+
 class Standard {
-   protected void draw() {
-       System.out.println("Drawing");
+    // Protected limits access to this package and its subclasses, even if a
+    // class belongs to a different package
+    protected void draw() {
+        System.out.println("Drawing");
    }
 
-   protected void write() {
-       System.out.println("Writing");
+    protected void write() {
+        System.out.println("Writing");
    }
 }
 

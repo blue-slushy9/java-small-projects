@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 // 'public class Program' is a common alternative to 'public class Main'
-public class Program {
+public class Country {
 	
 	public static void main(String[] args) {
 	    // Scanner block
@@ -21,7 +21,7 @@ public class Program {
 }
 
 // Default access modifier for classes is package-private
-class Country {
+class CountryDetails {
 
     // Private access modifier restricts access to only this class
     private String name;
