@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 // The Main class must be public in order for the JVM to find it and begin the
 // execution of a Java program, as main() is the entry point to a Java program
-public class Main {
+public class Customer {
 
     private static void main(String[] args) {
         // Scanner object block
@@ -13,11 +13,11 @@ public class Main {
         int roomNumber = read.nextInt();
        
         // Create Customer object instance then call Setter methods
-        Customer customer = new Customer();
-        customer.setFirstName(firstName);
-        customer.setSecondName(secondName);
-        customer.setAge(age);
-        customer.setRoomNumber(roomNumber);
+        CustomerDetails cd = new CustomerDetails();
+        cd.setFirstName(firstName);
+        cd.setSecondName(secondName);
+        cd.setAge(age);
+        cd.setRoomNumber(roomNumber);
         
         // Use Getter method to print user-input data
         System.out.println("First name: " + getFirstName());
@@ -28,7 +28,7 @@ public class Main {
 }
 
 // Default access modifier is package-private
-class Customer {
+class CustomerDetails {
 
     // Declare customer attributes, in this program they get set in class Main
     private String firstName;
@@ -58,7 +58,7 @@ class Customer {
     public void setAge(int age) {
         this.age = age;
     }
-    // Getter method for secondName
+    // Getter method for age
     public int getAge() {
         return age;
     }

@@ -13,6 +13,8 @@ public class Age {
         // Take input for age
         System.out.print("Please enter the student's age: ");
         int age = read.nextInt();
+        // Close scanner
+        read.close();
         // Blank line for legibility
         System.out.println();
         

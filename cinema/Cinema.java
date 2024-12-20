@@ -24,7 +24,7 @@ public class Cinema {
         String confirmation = ("Okay, so your ticket says you are going to see " +
                               ticket.getMovie() + ", and that you'll be sitting " +
                               "in row " + ticket.getRow() + " in seat number " + 
-                              ticket.getSeat() + ". Is this correct?"
+                              ticket.getSeat() + ". Is this correct?");
         
         System.out.println(confirmation);
     }
